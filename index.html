@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Imagen Escrita</title>
+    <style>
+        /* Estilos generales */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222831; /* Fondo oscuro elegante */
+            color: #eeeeee; /* Texto claro */
+            overflow-x: hidden;
+        }
+
+        /* Contenedor principal */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #00adb5; /* Turquesa vibrante */
+            color: #eeeeee;
+            padding: 30px;
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contenedor de contenido */
+        .content-wrapper {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Sección de contenido */
+        .content {
+            background-color: #393e46; /* Fondo oscuro contrastante */
+            padding: 25px;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            color: #ffd369; /* Color cálido para el texto */
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            transition: transform 0.3s ease;
+        }
+
+        .content:hover {
+            transform: scale(1.02); /* Efecto de agrandamiento suave */
+        }
+
+        /* Botón */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #ff2e63; /* Rosa neón */
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #00adb5; /* Cambio a turquesa */
+            transform: translateY(-3px); /* Levanta el botón al hacer hover */
+        }
+
+        /* Proyectos */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .project-item {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #393e46; /* Color base oscuro */
+            border-radius: 12px;
+            padding: 20px;
+            background-color: #ffd369; /* Fondo amarillo cálido */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .project-item:hover {
+            background-color: #ff2e63; /* Rosa en hover */
+            color: white;
+            box-shadow: 0 8px 20px rgba(255, 46, 99, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #eeeeee;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            IMAGEN ESCRITA 2024
+        </header>
+
+        <div class="content-wrapper">
+            <!-- Sección de contenido -->
+            <div class="content">
+                <p>
+                    En este curso, se explora la intersección entre diseño, programación y arte generativo utilizando p5.js. 
+                    Se enfatiza el uso del creative coding y el pensamiento computacional para resolver problemas visuales de manera innovadora. La integración de herramientas de IA amplía las posibilidades creativas y técnicas, complementando el proceso de diseño y programación.
+                </p>
+
+                <a href="https://wiki.ead.pucv.cl/Imagen_Escrita_2024" target="_blank" class="btn">Ver proyecto en la wiki</a>
+            </div>
+
+            <!-- Proyectos en grilla -->
+            <div class="projects-grid">
+                <a href="Proyectos/tarea 1/index.html" target="_blank" class="project-item">
+                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar.png" alt="Sketch 1"> Sketch 1
+                </a>
+                <a href="Proyectos/tarea 2/index.html" target="_blank" class="project-item">
+                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (1).png" alt="Sketch 2"> Sketch 2
+                </a>
+                <a href="Proyectos/tarea 3/index.html" target="_blank" class="project-item">
+                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (2).png" alt="Sketch 3"> Sketch 3
+                </a>
+                <a href="Proyectos/tarea 4/index.html" target="_blank" class="project-item">
+                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (2).png" alt="Sketch 4"> Sketch 4
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Imagen Escrita - Todos los derechos reservados.
+    </footer>
+</body>
+
+</html>
