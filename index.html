@@ -7,14 +7,15 @@
     <title>Sitio Web Imagen Escrita</title>
     <style>
         /* Estilos generales */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #222831; /* Fondo oscuro elegante */
-            color: #eeeeee; /* Texto claro */
+            background-color: #f4f4f9; /* Suave fondo gris */
+            color: #333333;
+            line-height: 1.6;
             overflow-x: hidden;
         }
 
@@ -28,17 +29,17 @@
 
         /* Encabezado */
         header {
-            background-color: #00adb5; /* Turquesa vibrante */
-            color: #eeeeee;
-            padding: 30px;
+            background-color: #ff5722; /* Naranja vibrante */
+            color: #ffffff;
+            padding: 20px;
             width: 100%;
             text-align: center;
-            font-size: 32px;
+            font-size: 28px;
             font-weight: bold;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         /* Contenedor de contenido */
@@ -49,78 +50,100 @@
 
         /* Sección de contenido */
         .content {
-            background-color: #393e46; /* Fondo oscuro contrastante */
+            background-color: #ffffff;
             padding: 25px;
             margin-bottom: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            color: #ffd369; /* Color cálido para el texto */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            font-size: 18px;
-            line-height: 1.6;
-            transition: transform 0.3s ease;
         }
 
-        .content:hover {
-            transform: scale(1.02); /* Efecto de agrandamiento suave */
+        .content p {
+            color: #444444;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
         /* Botón */
         .btn {
             display: inline-block;
-            padding: 12px 20px;
-            background-color: #ff2e63; /* Rosa neón */
+            padding: 12px 25px;
+            background-color: #009688; /* Verde azulado */
             color: white;
             text-decoration: none;
             border-radius: 30px;
             font-weight: bold;
-            letter-spacing: 1px;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #00adb5; /* Cambio a turquesa */
-            transform: translateY(-3px); /* Levanta el botón al hacer hover */
+            background-color: #00796b; /* Más oscuro en hover */
+            transform: translateY(-3px);
         }
 
         /* Proyectos */
         .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             gap: 20px;
         }
 
         .project-item {
+            flex: 1 1 calc(25% - 20px);
             display: flex;
+            flex-direction: column;
             align-items: center;
             text-decoration: none;
-            color: #393e46; /* Color base oscuro */
+            color: #333333;
             border-radius: 12px;
             padding: 20px;
-            background-color: #ffd369; /* Fondo amarillo cálido */
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .project-item img {
-            width: 60px;
-            height: 60px;
-            border-radius: 8px;
-            margin-right: 15px;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
 
         .project-item:hover {
-            background-color: #ff2e63; /* Rosa en hover */
-            color: white;
-            box-shadow: 0 8px 20px rgba(255, 46, 99, 0.5);
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #009688;
+        }
+
+        .project-item p {
+            font-size: 14px;
+            color: #666666;
         }
 
         /* Footer */
         footer {
             margin-top: 40px;
             text-align: center;
-            color: #eeeeee;
+            color: #666666;
             font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .project-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-item {
+                flex: 1 1 100%;
+            }
         }
     </style>
 </head>
@@ -135,8 +158,7 @@
             <!-- Sección de contenido -->
             <div class="content">
                 <p>
-                    En este curso, se explora la intersección entre diseño, programación y arte generativo utilizando p5.js. 
-                    Se enfatiza el uso del creative coding y el pensamiento computacional para resolver problemas visuales de manera innovadora. La integración de herramientas de IA amplía las posibilidades creativas y técnicas, complementando el proceso de diseño y programación.
+                    Explora la intersección entre diseño, programación y arte generativo con p5.js. El curso destaca el uso de creative coding y pensamiento computacional para resolver problemas visuales, junto con la integración de herramientas de IA para mejorar el proceso de diseño y programación.
                 </p>
 
                 <a href="https://wiki.ead.pucv.cl/Imagen_Escrita_2024" target="_blank" class="btn">Ver proyecto en la wiki</a>
@@ -145,16 +167,27 @@
             <!-- Proyectos en grilla -->
             <div class="projects-grid">
                 <a href="Proyectos/tarea 1/index.html" target="_blank" class="project-item">
-                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar.png" alt="Sketch 1"> Sketch 1
+                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar.png" alt="Sketch 1">
+                    <h3>Sketch 1</h3>
+                    <p>Un diseño introductorio que explora el arte generativo.</p>
                 </a>
+
                 <a href="Proyectos/tarea 2/index.html" target="_blank" class="project-item">
-                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (1).png" alt="Sketch 2"> Sketch 2
+                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (1).png" alt="Sketch 2">
+                    <h3>Sketch 2</h3>
+                    <p>Desarrollo de formas y patrones complejos con código.</p>
                 </a>
+
                 <a href="Proyectos/tarea 3/index.html" target="_blank" class="project-item">
-                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (2).png" alt="Sketch 3"> Sketch 3
+                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (2).png" alt="Sketch 3">
+                    <h3>Sketch 3</h3>
+                    <p>Interactividad con la creación de arte visual dinámico.</p>
                 </a>
+
                 <a href="Proyectos/tarea 4/index.html" target="_blank" class="project-item">
-                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (2).png" alt="Sketch 4"> Sketch 4
+                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (2).png" alt="Sketch 4">
+                    <h3>Sketch 4</h3>
+                    <p>Finalización del proyecto con IA y animaciones avanzadas.</p>
                 </a>
             </div>
         </div>
@@ -166,3 +199,4 @@
 </body>
 
 </html>
+
