@@ -7,15 +7,14 @@
     <title>Sitio Web Imagen Escrita</title>
     <style>
         /* Estilos generales */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9; /* Suave fondo gris */
-            color: #333333;
-            line-height: 1.6;
+            background-color: #1f1f1f; /* Fondo oscuro */
+            color: #ffffff;
             overflow-x: hidden;
         }
 
@@ -29,17 +28,17 @@
 
         /* Encabezado */
         header {
-            background-color: #ff5722; /* Naranja vibrante */
+            background-color: #ff4081; /* Rosa brillante */
             color: #ffffff;
             padding: 20px;
             width: 100%;
             text-align: center;
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
-            letter-spacing: 1.5px;
             text-transform: uppercase;
             margin-bottom: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            letter-spacing: 2px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
 
         /* Contenedor de contenido */
@@ -50,35 +49,37 @@
 
         /* Sección de contenido */
         .content {
-            background-color: #ffffff;
+            background-color: #333333;
             padding: 25px;
             margin-bottom: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
             text-align: center;
+            color: #f1f1f1;
         }
 
         .content p {
-            color: #444444;
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 20px;
+            color: #f9f9f9; /* Blanco suave */
         }
 
         /* Botón */
         .btn {
             display: inline-block;
-            padding: 12px 25px;
-            background-color: #009688; /* Verde azulado */
+            padding: 15px 30px;
+            background-color: #ff4081;
             color: white;
             text-decoration: none;
-            border-radius: 30px;
+            border-radius: 50px;
+            font-size: 18px;
             font-weight: bold;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #00796b; /* Más oscuro en hover */
-            transform: translateY(-3px);
+            background-color: #e91e63; /* Rosa más oscuro */
+            transform: translateY(-4px);
         }
 
         /* Proyectos */
@@ -95,45 +96,46 @@
             flex-direction: column;
             align-items: center;
             text-decoration: none;
-            color: #333333;
-            border-radius: 12px;
-            padding: 20px;
-            background-color: #ffffff;
+            color: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            background-color: #6200ea; /* Púrpura brillante */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
 
         .project-item img {
             width: 100px;
             height: 100px;
-            border-radius: 10px;
+            border-radius: 50%;
             margin-bottom: 15px;
         }
 
         .project-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
         }
 
         .project-item h3 {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 10px;
-            color: #009688;
+            color: #ffea00; /* Amarillo brillante */
         }
 
         .project-item p {
-            font-size: 14px;
-            color: #666666;
+            font-size: 16px;
+            color: #c5cae9; /* Azul claro */
         }
 
         /* Footer */
         footer {
             margin-top: 40px;
             text-align: center;
-            color: #666666;
+            color: #cccccc;
             font-size: 14px;
         }
 
+        /* Responsivo */
         @media (max-width: 768px) {
             .project-item {
                 flex: 1 1 calc(50% - 20px);
@@ -151,15 +153,16 @@
 <body>
     <main>
         <header>
-            IMAGEN ESCRITA 2024
+            Portafolio imagen escrita 2024
         </header>
 
         <div class="content-wrapper">
             <!-- Sección de contenido -->
             <div class="content">
+               
                 <p>
-                    Explora la intersección entre diseño, programación y arte generativo con p5.js. El curso destaca el uso de creative coding y pensamiento computacional para resolver problemas visuales, junto con la integración de herramientas de IA para mejorar el proceso de diseño y programación.
-                </p>
+                En esta página podran observar mis trabajos de la asignatura de Imagen Escrita, que se centra en la intersección entre diseño, programación y arte generativo
+            </p>
 
                 <a href="https://wiki.ead.pucv.cl/Imagen_Escrita_2024" target="_blank" class="btn">Ver proyecto en la wiki</a>
             </div>
@@ -167,27 +170,27 @@
             <!-- Proyectos en grilla -->
             <div class="projects-grid">
                 <a href="Proyectos/tarea 1/index.html" target="_blank" class="project-item">
-                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar.png" alt="Sketch 1">
+                    <img src="proyectos/tarea 1/cuadrados.png" alt="Sketch 1">
                     <h3>Sketch 1</h3>
-                    <p>Un diseño introductorio que explora el arte generativo.</p>
+                    <p>composición abstracta inspirada en las obras de Vera Molnár</p>
                 </a>
 
                 <a href="Proyectos/tarea 2/index.html" target="_blank" class="project-item">
-                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (1).png" alt="Sketch 2">
+                    <img src="Proyectos/Tarea 2/circulos 1.png" alt="Sketch 2">
                     <h3>Sketch 2</h3>
-                    <p>Desarrollo de formas y patrones complejos con código.</p>
+                    <p>sketch que incluya Condicionales</p>
                 </a>
 
                 <a href="Proyectos/tarea 3/index.html" target="_blank" class="project-item">
-                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (2).png" alt="Sketch 3">
+                    <img src="Proyectos/Tarea 3/circulos.png" alt="Sketch 3">
                     <h3>Sketch 3</h3>
-                    <p>Interactividad con la creación de arte visual dinámico.</p>
+                    <p>composición visual animada que utilice transformaciones geométricas para generar un patrón complejo </p>
                 </a>
 
                 <a href="Proyectos/tarea 4/index.html" target="_blank" class="project-item">
-                    <img src="c:\Users\ignac\OneDrive\Escritorio\descargar (2).png" alt="Sketch 4">
+                    <img src="Proyectos/Tarea 4/Triangulos.png" alt="Sketch 4">
                     <h3>Sketch 4</h3>
-                    <p>Finalización del proyecto con IA y animaciones avanzadas.</p>
+                    <p>Patrón recursivo, que se implementa algún tipo de interacción </p>
                 </a>
             </div>
         </div>
@@ -199,4 +202,3 @@
 </body>
 
 </html>
-
